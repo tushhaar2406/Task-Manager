@@ -11,7 +11,7 @@ app.use('/api/users', userRoute);
 
 // Sync all models
 sequelize.sync({ force: false }) // use true only for development (it drops & recreates tables)
-  .then(() => console.log('✅ All tables created successfully'))
-  .catch(err => console.error('❌ Error syncing tables:', err));
+  .then(() => console.log('All tables created successfully'))
+  .catch(err => console.error('Error syncing tables:', err));
 
-app.listen(5000, () => console.log('🚀 Server running on port 5000'));
+app.listen(5000, () => console.log('Server running on port 5000'));
